@@ -1,0 +1,171 @@
+/* var usiaAndi = 40;
+console.log(usiaAndi *= 2); 
+console.log(usiaAndi /= 2); 
+console.log(usiaAndi += 2); 
+console.log(usiaAndi -= 2); 
+console.log(usiaAndi %= 2);
+*/
+
+/* var x = 3;
+var y = '5';
+console.log(x == y); 
+console.log(x === y); 
+console.log(x > y); 
+console.log(x >= y);
+console.log(x < y); 
+console.log(x <= y); */
+
+/* var x = 5; 
+var y = '5'; 
+var z = 6;
+
+console.log(x===y && y<z); 
+console.log(x===y || y<z); 
+console.log(!(x===y || y<z);
+*/ 
+
+/*
+var laper = false;
+var punyaduit = false;
+var adayangjual = true;
+
+if (laper)
+{ 
+      console.log('Aldi laper');
+}
+else if (punyaduit)
+{
+      console.log('Aldi punya duit');
+}
+
+else 
+{
+      console.log('Aldi laper');
+}
+
+
+let alaskaki = 'sepatu'; let warna = 'merah';
+switch (true) {
+    case (alaskaki == 'sepatu' && warna == 'merah'):
+          console.log('Saya suka sepatu merah.');
+    break;
+    case (alaskaki == 'sepatu' && warna == 'biru'):
+          console.log('Saya suka sepatu biru.');
+    break;
+    case (alaskaki == 'sandal' && warna == 'merah'):
+          console.log('Saya suka sandal merah.');
+    break;
+    case (alaskaki == 'sandal' && warna == 'biru'):
+          console.log('Saya suka sandal biru.');
+          break;
+       default:
+    console.log('Tak suka alas kaki merah/biru.');
+}
+
+var nilai = 59;
+
+if (nilai > 80) 
+{ 
+      console.log('Excellent!');
+}
+else if (nilai >= 60 && nilai <= 80)
+{ 
+      console.log('Good job!');
+}
+else 
+{
+      console.log('Don\’t give up!');
+}
+/*
+let jomblo = false;
+if (jomblo) 
+{
+      console.log('Masih jomblo!');
+}
+else 
+{
+      console.log('Udah taken!');
+}
+*/
+/*
+var job = 'polisi';
+
+switch(job)
+{
+      case 'guru' :
+            console.log('kerjaan loe ngajar');
+            break;
+      case 'sopir' :
+            console.log('kerjaan loe nyetir');
+            break;
+       case 'polisi' :
+            console.log('kerjaan loe nilang');
+            break;     
+      default:
+            console.log('Ada aja kerjaannya.');
+}
+
+*/
+
+let alaskaki = 'sandal'; 
+let warna = 'merah';
+let harga = 'murah';
+
+switch (true) 
+{
+    case (alaskaki == 'sepatu' && warna == 'merah' && harga == 'murah'):
+          console.log('Saya suka sepatu merah yang murah.');
+    break;
+    case (alaskaki == 'sepatu' && warna == 'merah' && harga == 'mahal'):
+    console.log('Saya suka sepatu merah yang murah yang mahal.');
+    break;
+    case (alaskaki == 'sepatu' && warna == 'biru' && harga == 'murah'):
+          console.log('Saya suka sepatu biru yang murah.');
+    break;
+    case (alaskaki == 'sepatu' && warna == 'biru' && harga == 'mahal'):
+            console.log('Saya suka sepatu biru yang mahal.');
+      break;
+    case (alaskaki == 'sandal' && warna == 'merah' && harga == 'murah'):
+          console.log('Saya suka sandal merah yang murah.');
+      break;
+      case (alaskaki == 'sandal' && warna == 'merah' && harga == 'mahal'):
+          console.log('Saya suka sandal merah yang mahal.');
+    break;
+    case (alaskaki == 'sandal' && warna == 'biru' && harga == 'murah'):
+          console.log('Saya suka sandal biru yang murah.');
+      break;
+      case (alaskaki == 'sandal' && warna == 'biru' && harga == 'mahal'):
+          console.log('Saya suka sandal biru yang mahal.');
+          break;
+       default:
+            console.log('Tak suka alas kaki merah/biru.');
+}
+
+let bulan =  new Date();
+console.log('Saat ini bulan ' + (bulan.getMonth() + 3 ) + ' : Oktober');
+
+
+var massa = 67;
+var tinggi = 1.78;
+var imt = massa / tinggi;
+
+if (imt < 18.5)
+{
+      console.log('Berat badan kurang');
+}
+else if (imt >= 18.5 && imt <= 24.9)
+{
+      console.log('Berat badan ideal');
+}
+else if (imt > 25 && imt <= 29.9)
+{
+      console.log('Berat badan berlebih');
+}
+else if (imt >=30 && imt <= 39.9)
+{
+      console.log('Berat badan sangat berlebih');
+}
+else if (imt > 39.9)
+{
+      console.log('Berat badan obesitas');
+}

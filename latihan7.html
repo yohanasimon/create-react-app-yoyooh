@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <body>
+<input id="a1" type="checkbox" onclick="fungsiKu1(this.value)" value="Pria"> Pria
+<input id="a2" type="checkbox"
+onclick="fungsiKu1(this.value)" value="Wanita"> Wanita
+<br><br>
+<button id="klikini" onclick="fungsiKu2(this.value)"> klik
+</button>
+<p id="output"></p>
+
+<!--Kuadrat-->
+<form id="kuadrat_form">
+    <p>Masukkan Angka: </p>
+<input id="numberKuadrat" type="number" />
+</form>
+<button onclick="kuadrat()">Kuadratkan</button>
+<p>Hasil 
+    <span id="numberValue"></span><sup>2</sup> = 
+    <span id="hasil">0</span>
+</p>
+
+<!-- Pangkat -->
+<form id="pangkat_form">
+    <p> Masukkan angka: </p>
+    <input id="angka" type="number" />
+    <p>Masukkan pangkat:</p>
+    <input id="angka_pangkat" type="number" />
+</form>
+<button onclick="pangkat2()">Pangkatkan</button>
+<p>Hasil
+    <span id="numberValuee">-</span><sup id="pangkat">0</sup> =
+    <span id="hasil2">0</span>
+</p>
+
+<!-- Calculator -->
+<form id="calculator_form">
+    <p>Masukkan angka 1: </p>
+    <input id="angka1" type="number" />
+    <p>Masukkan angka 2: </p>
+    <input id="angka2" type="number" />
+</form>
+<button onclick="kali()">Kali x</button>
+<button onclick="modulus()">Modulus %</button>
+<button onclick="pangkat()">Pangkat ^</button>
+<p>
+    <span id="value1">-</span><sup id="angka3">0</sup> =
+    <span id="hasil3">0</span>
+</p>
+
+<script>
+
+// Kali
+    function kali() {
+        const angka1 = document.getElementById('angka1').value;
+        const angka2 = document.getElementById('angka2').value;
+
+    // set #value1 & #angka3
+        document.getElementById('value1').innerHTML = angka1;
+        document.getElementById('angka3').innerHTML = angka2;
+    
+    // set #hasilkali
+        document.getElementById('hasil3').innerHTML = (angka1 * angka2);
+
+    }
+
+// Modulus
+    function modulus() {
+        const angka1 = document.getElementById('angka1').value;
+        const angka2 = document.getElementById('angka2').value;
+
+    // set #value1 & #angka3
+        document.getElementById('value1').innerHTML = angka1;
+        document.getElementById('angka3').innerHTML = angka2;
+    
+    // set #hasilmodulus
+        document.getElementById('hasil3').innerHTML = (angka1 % angka2);
+    }
+
+// Pangkat
+    function pangkat() {
+        const angka1 = document.getElementById('angka1').value;
+        const angka2 = document.getElementById('angka2').value;
+
+    // set #value1 & #angka3
+        document.getElementById('value1').innerHTML = angka1;
+        document.getElementById('angka3').innerHTML = angka2;
+    
+    // set #hasilpangkat
+        document.getElementById('hasil3').innerHTML = Math.pow(angka1, angka2);
+}
+
+// Kuadrat
+    function kuadrat() {
+        const number = document.getElementById('numberKuadrat').value;
+    
+    // set #numberValue
+    document.getElementById('numberValue').innerHTML = number;
+    document.getElementById('hasil').innerHTML = number**2;
+    }
+
+// Pangkat
+    // simpan Value dalam variable
+    function pangkat2() {
+        const angka = document.getElementById('angka').value;
+        const angka_pangkat = document.getElementById('angka_pangkat').value;
+
+    // set #numberValue & #pangkat
+    document.getElementById('numberValuee').innerHTML = angka;
+    document.getElementById('pangkat').innerHTML = angka_pangkat;
+
+    // set #hasilpangkat
+    document.getElementById('hasil2').innerHTML = Math.pow(angka, angka_pangkat);
+
+    }
+
+
+    function fungsiKu1(x) {
+if(document.getElementById("a1").checked==true &&
+document.getElementById("a2").checked==false){
+document.getElementById("klikini").value = 'Pria'}
+else if(document.getElementById("a1").checked==false &&
+document.getElementById("a2").checked==true){
+document.getElementById("klikini").value = 'Wanita'}
+else if(document.getElementById("a1").checked==true &&
+document.getElementById("a2").checked==true){
+document.getElementById("klikini").value = 'Pria & Wanita'}
+else{document.getElementById("klikini").value = ''}
+}
+function fungsiKu2(y) { document.getElementById("output").innerHTML = y }
+</script>
+</body>
+</html>
