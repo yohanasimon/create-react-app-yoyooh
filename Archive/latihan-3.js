@@ -484,3 +484,4 @@ const getMode = (array) => {
       return modes;
       }
       console.log(getMedian(x))
+      console.log(getMode(x))
