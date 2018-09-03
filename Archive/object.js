@@ -62,4 +62,4 @@ var y = w.filter((boo) => boo % 2 == 0);
 var z = w.filter((boo) => boo % 2 !== 0);
 console.log(x); 
 console.log(y); 
-console.log(z);
+console.log(abc);
