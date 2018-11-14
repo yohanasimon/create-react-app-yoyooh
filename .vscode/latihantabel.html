@@ -1,0 +1,81 @@
+<head>
+    <style>
+@media print {
+    body {
+    font-size: 1250%;
+    }
+}
+body {
+    
+    height: 1000px;
+    background-color:gainsboro;
+}
+.kolom {
+    column-count: 3;
+column-gap: 50px; column-rule: 20px solid red;
+   
+}
+h2 {
+    background-color: green;
+    padding: 10px;
+    position: fixed; 
+    top: 10px; 
+    left: 700px;
+    right:10px;
+
+}
+
+th:nth-of-type(odd) {
+background-color: yellow;
+}
+th:nth-of-type(even) 
+{ background-color: red;
+} 
+th:hover {
+    cursor:pointer;
+    background-color:blue;
+    color: white;
+
+}
+td:nth-of-type(odd) {
+    background-color: aqua;
+}
+td:nth-of-type(even) {
+    background-color: blueviolet;
+}
+td:hover {
+    cursor:pointer;
+    background-color:brown;
+    color: white;
+}
+table {
+    margin: auto;
+
+}
+</style>
+</head>
+<body>
+        <main class="kolom"> 
+            <br><h1>Ini kolom 1</h1> 
+            <br><h1>Ini kolom 2</h1> 
+            <br><h1>Ini kolom 3</h1>
+        </main>
+<h2>Saya Melayang Loh!</h2> 
+<table>
+    <tr>
+    <th> Tabel No-1 </th>
+    <th> Tabel No-2 </th>
+    <th> Tabel No-3 </th>
+    <th> Tabel No-4 </th>
+    <th> Tabel No-5 </th>
+</tr>
+<tr> 
+    <td> 1 </td>
+    <td> 2 </td>
+    <td> 3 </td>
+    <td> 4 </td>
+    <td> 5 </td>
+</tr>
+
+</table>
+</body>
